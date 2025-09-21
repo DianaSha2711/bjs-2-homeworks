@@ -1,6 +1,6 @@
 function getArrayParams(...arr) {
   if (!arr.length){
-    return null;
+    return 0;
   }
   let min = Infinity, max = -Infinity;
   let summ = 0;
