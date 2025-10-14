@@ -25,15 +25,11 @@ class PrintEditionItem {
         }
     }
 
-    fix() {
-        this._state = this._state * 1.5;
-        if (this._state > 100){
-            this._state = 100;
-        }
-        return this._state;
+   fix() {
+        return this.state *= 1.5;
     }
 }
-class Magazine extends PrintEditionItem {
+class Magazine extenтакds PrintEditionItem {
     constructor(name, releaseDate, pagesCount) {
         super(name, releaseDate, pagesCount);
         this.type = "magazine";
